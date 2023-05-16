@@ -15,7 +15,7 @@ It will not be necessary to install any extensions in chrome. I personally did t
 
 # Notes
 
-- Sice **ViGEm Bus Driver** is a windows kernel mode driver, we can only run on windows. If you find some multiplatform way to add a kernel mode driver you can notify me.
+- Sice **ViGEm Bus Driver** is a windows kernel mode driver also we are using win32 p/invoking functions, so we can only run on windows. If you find some multiplatform way to do this you can submit an PR, make an fork or notify us.
 
 - Tested also transport input data using websockets, but the huge delay between pasing/(de)serializing data tooks a huge time and the result was a very bad experience.
 
