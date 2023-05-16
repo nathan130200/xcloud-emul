@@ -1,4 +1,4 @@
-_Add mouse & keyboard support to xcloud gaming platform using virtual gamepad emulation layer._
+_Add mouse & keyboard support to xcloud gaming platform using virtual gamepad emulation layer._ [![.NET Core Desktop](https://github.com/nathan130200/xcloud-emul/actions/workflows/dotnet-desktop.yml/badge.svg)](https://github.com/nathan130200/xcloud-emul/actions/workflows/dotnet-desktop.yml)
 
 # About
 The main objective of this software is to provide mouse & keyboard support for xcloud using an emulation layer directly through a virtual gamepad.
