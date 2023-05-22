@@ -12,12 +12,33 @@ It will not be necessary to install any extensions in chrome. I personally did t
 
 - Windows Machine
 
+# Old Source Code
+Current source code is my initial work of emulation layer test, i've created a hard-coded preset for [Atomic Hearts](https://www.xbox.com/pt-BR/play/games/atomic-heart/9P731Z4BBCT3)
+
+Where buttons:
+- D0 (Aka Number 0 in alpha keys <b>not</b> numpad keys): Stop and close application (your cursor gets released again)
+- D1 (aka Number 1 in alpha keys) - Switch Prev Weapon
+- D2 (aka Number 1 in alpha keys) - Switch Next Weapon
+- Up, Left, Right, Bottom arrow keys - Apply respective directions i D-PAD keys.
+- WASD - Move character
+- Mouse - Move aim (ajust ingame sensibility to maxium, i used this to achive better results in this prototype)
+- Space - Jump (A button in xbox)
+- R - Reload Weapon / Open Weapon menu / Consume item (While in inventory) (X button in xbox)
+- Q - Use shock (Y button in xbox)
+- C - Crouch (B button in xbox)
+- LMB (aka Left Mouse Button) - Fire (emulate Right Trigger pressed)
+- RMB (aka Right Mouse Button) - Precise Aim - (emulate Left Trigger pressed)
+- M (View button in Xbox) open Map
+- P (Menu button in Xbox) pause game.
+- F (RB button in Xbox) used in atomic to collect items/interact with things.
 
 # Notes
 
 - Sice **ViGEm Bus Driver** is a windows kernel mode driver also we are using win32 p/invoking functions, so we can only run on windows. If you find some multiplatform way to do this you can submit an PR, make an fork or notify us.
 
 - Tested also transport input data using websockets, but the huge delay between pasing/(de)serializing data tooks a huge time and the result was a very bad experience.
+
+- Once emulation is running, your mouse will be forced to stay on center of your screen! This can cause a light increase in CPU usage so instead i just decided to add an Delay between each mouse calls to prevent high CPU usage.
 
 # Special Thanks
 
